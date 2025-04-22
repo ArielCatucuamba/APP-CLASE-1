@@ -1,0 +1,116 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>Ready to create an app?</strong>
+
+    <br>
+    <p>Radio</p>
+    <div>
+
+      <ion-radio-group value="strawberries">
+        <ion-radio value="grapes">Grapes</ion-radio><br />
+        <ion-radio value="strawberries">Strawberries</ion-radio><br />
+        <ion-radio value="pineapple">Pineapple</ion-radio><br />
+        <ion-radio value="cherries">Cherries</ion-radio>
+      </ion-radio-group>
+
+    </div>
+
+    <br>
+    <p>Formulario</p>
+
+    <ion-list>
+      <ion-item>
+        <ion-input label="Default input"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Input with placeholder" placeholder="Enter company name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Input with value" value="121 S Pinckney St #300"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Readonly input" value="Madison" [readonly]="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Disabled input" value="53703" [disabled]="true"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <br>
+    <p>Checkbox</p>
+
+    <ion-checkbox>I agree to the terms and conditions</ion-checkbox>
+
+    <br>
+    <p>datatime</p>
+
+    <ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+    <ion-modal [keepContentsMounted]="true">
+      <ng-template>
+        <ion-datetime id="datetime"></ion-datetime>
+      </ng-template>
+    </ion-modal>
+
+    <br>
+    <p>card</p>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Tarjeta</ion-card-title>
+        <ion-card-subtitle>Mi disculpa</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolore quos eius cum, quae similique expedita
+        placeat iure repudiandae velit quis ab fuga mollitia nesciunt error cumque culpa! Facilis, sapiente!<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolore quos eius cum, quae similique expedita
+        placeat iure repudiandae velit quis ab fuga mollitia nesciunt error cumque culpa! Facilis, sapiente!<br>
+
+      </ion-card-content>
+    </ion-card>
+
+    <p>avatar</p>
+    <ion-avatar>
+      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+
+    <p>toast</p>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Inline Toast</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-button id="open-toast" expand="block">Open</ion-button>
+      <p id="message">This toast example uses triggers to automatically open a toast when the button is clicked.</p>
+      <ion-toast trigger="open-toast" message="This toast will disappear after 5 seconds" [duration]="5000"></ion-toast>
+    </ion-content>
+
+
+
+
+
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer"
+        href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div>
+
+
+</ion-content>
